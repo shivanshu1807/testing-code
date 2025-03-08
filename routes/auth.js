@@ -11,6 +11,7 @@ connectToMongo();
 
 
 
+
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/image', require('./routes/imagePrediction'));
 
