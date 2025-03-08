@@ -8,15 +8,7 @@ const multer = require('multer');
 
 connectToMongo();
 
-const express = require('express');
-const app = express();
-const PORT = process.env.PORT;
 
-
-
-app.use(cors());
-
-const storage = multer.memoryStorage();
 
 
 app.use('/api/auth', require('./routes/auth'));
