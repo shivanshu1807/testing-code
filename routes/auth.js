@@ -19,10 +19,6 @@ app.use(bodyParser.urlencoded({ limit: "50mb", extended: true, parameterLimit: 5
 app.use(cors());
 
 const storage = multer.memoryStorage();
-const upload = multer({
-    storage: storage,
-    limits: { fileSize: 50 * 1024 * 1024 }
-});
 
 
 app.use('/api/auth', require('./routes/auth'));
