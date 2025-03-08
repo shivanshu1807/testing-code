@@ -34,4 +34,4 @@ app.get('/', (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`canCare backend listening on http://localhost:${PORT}`);
-});
+})
